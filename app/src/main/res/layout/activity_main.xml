@@ -1,15 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/pic_home"
     android:layout_height="match_parent"
     tools:context="porker.steven.com.a2018iotapp3.MainActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_weight="1.3"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:orientation="vertical"
+           android:gravity="center_horizontal"
+           > </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            >
+            <ImageView
+                android:background="@drawable/pic_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+               <RadioButton
+                   android:id="@+id/rbLogin"
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:button="@null"
+                   android:checked="true"
+                   android:drawableBottom="@drawable/check_line"
+                   android:gravity="center"
+                   android:text="@string/login"
+                   android:textColor="@drawable/check_textcolor"
+                   android:textSize="16sp"
+                   android:layout_height="match_parent" />
+                <RadioButton
+                    android:id="@+id/rbSimulation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawableBottom="@drawable/check_line"
+                    android:gravity="center"
+                    android:text="@string/moni"
+                    android:textColor="@drawable/check_textcolor"
+                    android:textSize="16sp"
+                    android:layout_height="match_parent" />
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/ll"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                >
+                <!--Ip config-->
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="40dp"
+                   android:layout_height="wrap_content">
+                  <TextView
+                      android:id="@+id/t1"
+                      android:text="IP"
+                      android:gravity="center"
+                      android:layout_weight="80"
+                      android:singleLine="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" />
+                   <EditText
+                       android:id="@+id/ip"
+                       android:gravity="center"
+                       android:layout_weight="6"
+                       android:singleLine="true"
+                       android:layout_width="wrap_content"
+                       android:background="@drawable/boeder_edittext"
+                       android:hint="@string/ip_tip"
+                       android:layout_height="wrap_content" />
+               </LinearLayout>
+                <!--Program sign-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/t2"
+                        android:layout_weight="1.2"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="@string/program_sign"
+                        android:textColor="@drawable/check_textcolor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/program_sign"
+                        android:layout_width="wrap_content"
+                        android:hint="@string/program_sign"
+                        android:gravity="center"
+                        android:background="@drawable/boeder_edittext"
+                        android:textColor="@drawable/check_textcolor"
+                        android:layout_weight="6"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--user_name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/user"
+                        android:layout_weight="2"
+                        android:text="@string/username"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/user_name"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:background="@drawable/boeder_edittext"
+                        android:textColor="@drawable/check_textcolor"
+                        android:layout_weight="6"
+                        android:hint="@string/username_tip"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <!--user_password-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="40dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/user_pass"
+                        android:text="@string/pwd"
+                        android:layout_weight="2"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/user_password"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:background="@drawable/boeder_edittext"
+                        android:hint="@string/program_sign"
+                        android:textColor="@drawable/check_textcolor"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:id="@+id/check_savedata"
+                        android:gravity="center"
+                        android:layout_marginLeft="150dp"
+                        android:text="@string/savedata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+            </LinearLayout>
+                <!--Save Login data-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="50dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/ok"
+                        android:textSize="18sp"
+                        android:layout_width="0dp"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:paddingBottom="15dp"
+                        android:layout_marginTop="8dp"
+                        android:text="@string/ok"
+                        android:background="@drawable/check_button_login"
+                        android:textColor="@drawable/check_textcolor"
+                        android:layout_height="50dp" />
+                </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/activity_include_title"
+        />
+
+</RelativeLayout>
