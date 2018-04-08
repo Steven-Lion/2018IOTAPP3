@@ -5,20 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="porker.steven.com.a2018iotapp3.curtainActivity">
+    tools:context="porker.steven.com.a2018iotapp3.include_title">
     <RelativeLayout
         android:id="@+id/rlTitle"
         android:background="@color/title_blue"
         android:layout_width="match_parent"
         android:layout_height="50dp">
-       <ImageView
-           android:layout_width="wrap_content"
-           android:id="@+id/ivBack"
-           android:layout_alignParentLeft="true"
-           android:layout_centerVertical="true"
-           android:padding="10dp"
-           android:src="@mipmap/back"
-           android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="远程智能家居控制系统"
+            android:textColor="#277693"
+            android:textSize="13.6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_height="match_parent" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
@@ -28,6 +29,15 @@
             android:text=""
             android:textColor="@android:color/white"
             android:textSize="22sp"
+            />
+        <ImageView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/btn_login"
+            android:visibility="visible"
             />
 
 

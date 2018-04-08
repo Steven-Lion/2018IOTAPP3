@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
+        android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -18,8 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".curtainActivity" />
-        <!-- <activity android:name="" -->
+        <activity android:name=".curtainAcitivity"
+           android:screenOrientation="landscape"
+            ></activity>
+        <activity android:name=".mian_include_title"
+            android:screenOrientation="landscape"
+            ></activity>
     </application>
 
 </manifest>

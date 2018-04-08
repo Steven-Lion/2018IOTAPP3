@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/pic_home"
+    android:background="@mipmap/pic_home"
     android:layout_height="match_parent"
     tools:context="porker.steven.com.a2018iotapp3.MainActivity">
     <LinearLayout
@@ -28,7 +28,7 @@
             android:background="@android:color/white"
             >
             <ImageView
-                android:background="@drawable/pic_title"
+                android:background="@mipmap/pic_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <RadioGroup
@@ -55,6 +55,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:button="@null"
+                    android:onClick="MyClick"
                     android:drawableBottom="@drawable/check_line"
                     android:gravity="center"
                     android:text="@string/moni"
@@ -76,7 +77,7 @@
                <LinearLayout
                    android:layout_width="match_parent"
                    android:orientation="horizontal"
-                   android:layout_marginTop="40dp"
+                   android:layout_marginTop="10dp"
                    android:layout_height="wrap_content">
                   <TextView
                       android:id="@+id/t1"
@@ -100,7 +101,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/t2"
@@ -125,7 +126,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/user"
@@ -148,7 +149,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content">
                     <TextView
                         android:id="@+id/user_pass"
@@ -167,23 +168,27 @@
                         android:textColor="@drawable/check_textcolor"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="50dp"
-                    android:orientation="horizontal"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
                     <CheckBox
                         android:id="@+id/check_savedata"
-                        android:gravity="center"
-                        android:layout_marginLeft="150dp"
-                        android:text="@string/savedata"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-            </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="160dp"
+                        android:button="@null"
+                        android:drawableLeft="@drawable/check_box"
+                        android:gravity="center"
+                        android:text="@string/savedata" />
+                </LinearLayout>
                 <!--Save Login data-->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_marginTop="50dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal"
                     android:layout_height="wrap_content">
                     <Button
@@ -195,6 +200,7 @@
                         android:paddingBottom="15dp"
                         android:layout_marginTop="8dp"
                         android:text="@string/ok"
+                        android:onClick="MyClick"
                         android:background="@drawable/check_button_login"
                         android:textColor="@drawable/check_textcolor"
                         android:layout_height="50dp" />
