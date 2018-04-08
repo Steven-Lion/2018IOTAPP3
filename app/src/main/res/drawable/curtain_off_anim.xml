@@ -10,5 +10,7 @@
         <item android:drawable="@mipmap/on_curtain_6" android:duration="100"/>
         <item android:drawable="@mipmap/on_curtain_7" android:duration="100"/>
         <item android:drawable="@mipmap/on_curtain_8" android:duration="100"/>
-        <item android:drawable="@mipmap/on_curtain_9" android:duration="900"/>
+        <item android:drawable="@mipmap/on_curtain_9" android:duration="100"/>
+        <item android:drawable="@mipmap/on_curtain_10" android:duration="100"/>
+        <item android:drawable="@mipmap/on_curtain_11" android:duration="9000"/>
 </animation-list>

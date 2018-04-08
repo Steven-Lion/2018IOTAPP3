@@ -26,9 +26,9 @@ public class mian_include_title extends AppCompatActivity {
         b_curtain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent intent = new Intent(mian_include_title.this,curtainAcitivity.class);
-                startActivity(intent);
-//                Toast.makeText(mian_include_title.this, "haha", Toast.LENGTH_SHORT).show();
+               Intent intent1 = new Intent(mian_include_title.this,curtain_Activity2.class);
+                startActivity(intent1);
+              Toast.makeText(mian_include_title.this, "haha", Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-
-    tools:context="porker.steven.com.a2018iotapp3.MainActivity">
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
@@ -19,6 +18,7 @@
             android:layout_height="match_parent">
            <Button
                android:id="@+id/btnCurtain"
+               android:onClick="MyClick"
                android:layout_width="wrap_content"
                android:background="@mipmap/curtain_normal"
                android:layout_height="wrap_content" />

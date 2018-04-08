@@ -18,10 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".curtainAcitivity"
-           android:screenOrientation="landscape"
-            ></activity>
-        <activity android:name=".mian_include_title"
+        <activity
+            android:name=".curtainAcitivity"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".mian_include_title"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".curtain_Activity2"
             android:screenOrientation="landscape"
             ></activity>
     </application>

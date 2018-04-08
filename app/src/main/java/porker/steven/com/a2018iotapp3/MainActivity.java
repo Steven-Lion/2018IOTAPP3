@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void MyClick(View v){
-        if (v.getId()==R.id.rbSimulation) {
+        if (v.getId()==R.id.ok) {
             Intent intent = new Intent(MainActivity.this, mian_include_title.class);
             startActivity(intent);
         }
