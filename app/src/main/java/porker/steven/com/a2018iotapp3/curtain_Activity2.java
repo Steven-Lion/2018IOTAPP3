@@ -16,20 +16,22 @@ public class curtain_Activity2 extends AppCompatActivity {
         setContentView(R.layout.activity_curtain_2);
 
         final ImageView ivCurtain=(ImageView)findViewById(R.id.ivOnCurtain3);
-        CheckBox cbCheck = (CheckBox)findViewById(R.id.cbCurtain3);
+        final CheckBox cbCheck = (CheckBox)findViewById(R.id.cbCurtain3);
 
 
         cbCheck.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b){
-                    ivCurtain.setImageResource(R.drawable.curtain_on_anim);
-                    AnimationDrawable animationOnCurtain = (AnimationDrawable)ivCurtain.getDrawable();
+                    cbCheck.setBackgroundResource(R.drawable.ic_on);
+                    ivCurtain.setBackgroundResource(R.drawable.curtain_on_anim);
+                    AnimationDrawable animationOnCurtain = (AnimationDrawable)ivCurtain.getBackground();
                     animationOnCurtain.start();
                 }
                 else{
-                    ivCurtain.setImageResource(R.drawable.curtain_off_anim);
-                    AnimationDrawable animationOffCurtain = (AnimationDrawable)ivCurtain.getDrawable();
+                    cbCheck.setBackgroundResource(R.drawable.ic_off);
+                    ivCurtain.setBackgroundResource(R.drawable.curtain_off_anim);
+                    AnimationDrawable animationOffCurtain = (AnimationDrawable)ivCurtain.getBackground();
                     animationOffCurtain.start();
                 }
             }
