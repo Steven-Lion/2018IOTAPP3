@@ -29,7 +29,7 @@
                 android:textSize="22sp"
                 android:layout_height="wrap_content" />
             <CheckBox
-                android:id="@+id/cbCurtain2"
+                android:id="@+id/cbCurtain3"
                 android:layout_width="wrap_content"
                 android:background="@drawable/check_button"
                 android:button="@null"
@@ -38,22 +38,12 @@
     </LinearLayout>
     <include layout="@layout/activity_include_title"/>
     <ImageView
-        android:id="@+id/ivOffCurtain2"
-        android:layout_width="750dp"
-        android:layout_marginLeft="143dp"
-        android:layout_marginStart="143dp"
-        android:visibility="gone"
-        android:background="@drawable/curtain_off_anim"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_height="480dp" />
-    <ImageView
-        android:id="@+id/ivOnCurtain2"
+        android:id="@+id/ivOnCurtain3"
         android:layout_width="750dp"
         android:layout_marginLeft="143dp"
         android:layout_marginStart="143dp"
         android:visibility="visible"
-        android:background="@drawable/curtain_on_anim"
+        android:background="@drawable/curtain_off_anim"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
         android:layout_height="480dp" />

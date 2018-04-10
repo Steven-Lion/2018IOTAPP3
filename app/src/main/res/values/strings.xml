@@ -11,4 +11,5 @@
     <string name="moni">模拟</string>
     <string name="savedata">保存登录信息</string>
     <string name="program_sign">项目标识</string>
+    <string name="title_activity_main2">Main2Activity</string>
 </resources>

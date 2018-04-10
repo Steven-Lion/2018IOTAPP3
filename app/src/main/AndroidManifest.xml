@@ -20,13 +20,17 @@
         </activity>
         <activity
             android:name=".curtainAcitivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
         <activity
             android:name=".mian_include_title"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".curtain_Activity2"
-            android:screenOrientation="landscape"
-            ></activity>
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".curtain_Activity2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
